@@ -1,96 +1,102 @@
 <template>
   <div>
-    <b-alert
-      v-model="showDismissibleAlert"
-      variant="danger"
-      dismissible
-    >
-      Perfect for a festive attitude!
-    </b-alert>
-    <b-button
-      variant="warning"
-      class="m-1"
-      @click="showDismissibleAlert=true"
-    >
-      <h3>CHECK OUT OUR NEW OAXACAN AIR! ({{ showDismissibleAlert ? 'visible' : '' }})</h3>
-    </b-button>
-    <b-carousel
-      id="carousel-1"
-      v-model="slide"
-      :interval="4000"
-      controls
-      indicators
-      background="#ababab"
-      img-width="1024"
-      img-height="480"
-      style="text-shadow: 1px 1px 2px #333;"
-      @sliding-start="onSlideStart"
-      @sliding-end="onSlideEnd"
-    >
-      <!-- Text slides with image -->
-      <b-carousel-slide
-        img-src="https://photographe-en-herbe.com/wp-content/uploads/2019/03/paysage-montagne-photographe-en-herbe-1024x576.jpg(147 kB)
-https://photographe-en-herbe.com/wp-content/uploads/2019/03/paysage-montagne-photographe-en-herbe-1024x576.jpg
-"
+    <div class="container-fluid">
+      <b-card
+        overlay
+        img-src="https://motivationping.com/wp-content/uploads/2017/11/2.jpg"
+        img-alt="Card Image"
+        text-variant="black"
+        title="WELCOME TO THE OFFICIAL WEBSITE OF JUST DO IT "
       >
-        <h1>REVITALIZE YOURSELF</h1>
-      </b-carousel-slide>
-      <!-- Slides with custom text -->
-      <b-carousel-slide
-        img-src="https://voyagerloin.com/uploads/960/8390041535255.jpg(178 kB)
-https://voyagerloin.com/uploads/960/8390041535255.jpg
-"
-      >
-        <h1>REENERGIZE YOURSELF</h1>
-      </b-carousel-slide>
-      <b-carousel-slide
-        img-src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201902/sunset-3423899_1920.jpeg?yVomw0Dy4DJHpw6goGocYEp48.2zZz5A(61 kB)
-https://akm-img-a-in.tosshub.com/indiatoday/images/story/201902/sunset-3423899_1920.jpeg?yVomw0Dy4DJHpw6goGocYEp48.2zZz5A
-"
-      >
-        <h1>PURIFY YOURSELF</h1>
-      </b-carousel-slide>
-    </b-carousel>
-    <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p>
+        <b-card-text>
+          THE WORLD'S Sport
+        </b-card-text>
+      </b-card>
+    </div>
+
+    <div class="full-width center-content">
+      <b-form @submit="onSubmit">
+        <b-form-group
+          id="input-group-email"
+          label="Email:"
+          label-for="input-email"
+        >
+          <b-form-input
+            id="input-email"
+            v-model="form.email"
+            required
+            placeholder="Your email address"
+          />
+        </b-form-group>
+        <b-form-group
+          id="input-group-password"
+          label="Password:"
+          label-for="input-password"
+        >
+          <b-input
+            id="input-password"
+            v-model="form.password"
+            type="password"
+            required
+            placeholder="Your password"
+          />
+        </b-form-group>
+        <b-button
+          type="submit"
+          variant="primary"
+        >
+          Log in
+        </b-button>
+      </b-form>
+    </div>
   </div>
 </template>
+
 <script>
 export default {
-  data () {
+  data: function () {
     return {
-      slide: 0,
-      sliding: null
+      form: {
+        email: '',
+        password: ''
+      }
     }
   },
   methods: {
-    onSlideStart (slide) {
-      this.sliding = true
-    },
-    onSlideEnd (slide) {
-      this.sliding = false
+    onSubmit () {
+      let myjson = [{ // should be retrieved from the session storage which is intialized with the JSON.parse og myjson
+        email: '1',
+        password: '2',
+        name: '3'
+      },
+      {
+        email: 'a',
+        password: 'b',
+        name: 'c'
+      }
+      ]
+      let email = this.form.email
+      let password = this.form.password
+      sessionStorage.users = JSON.stringify(myjson.find(function (users) { return ((users.email === email) && (users.password === password)) }))
+      this.$router.push('/loginpage')
     }
   }
 }
 </script>
-<script>
- export default {
-   data() {
-     return {
-       dismissSecs: 10,
-       dismissCountDown: 0,
-       showDismissibleAlert: false
-     }
-   },
-   methods: {
-     countDownChanged(dismissCountDown) {
-       this.dismissCountDown = dismissCountDown
-     },
-     showAlert() {
-       this.dismissCountDown = this.dismissSecs
-     }
-   }
- }
-</script>
+
+  <style>
+    .container-fluid{
+    justify-content: center;
+    text-align: center;
+    }
+    h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    }
+    span {
+    display: block;
+    padding-bottom: 30px;
+    font-size: 1.6rem;
+    }
+  </style>
