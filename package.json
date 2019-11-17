@@ -19,9 +19,11 @@
   "author": "Daniel Cook",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.1.0",
     "express": "^4.17.1",
     "vue": "^2.6.10",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",

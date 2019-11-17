@@ -59,44 +59,27 @@ export default {
       form: {
         email: '',
         password: ''
-      }
+      },
+      users: []
     }
   },
   methods: {
     onSubmit () {
-      let myjson = [{ // should be retrieved from the session storage which is intialized with the JSON.parse og myjson
-        email: '1',
-        password: '2',
-        name: '3'
-      },
-      {
-        email: 'a',
-        password: 'b',
-        name: 'c'
-      }
-      ]
-      let email = this.form.email
-      let password = this.form.password
-      sessionStorage.users = JSON.stringify(myjson.find(function (users) { return ((users.email === email) && (users.password === password)) }))
-      this.$router.push('/loginpage')
+      fetch('https://api.myjson.com/bins/18xv8i')
+        .then(response => response.json())
+        .then(json => {
+          this.users = json.users
+        })
+        .then(() => {
+          let email = this.form.email
+          let password = this.form.password
+          sessionStorage.user = JSON.stringify(this.users.find(function (user) {
+            return ((user.email === email) && (user.password === password))
+          }))
+          console.log(sessionStorage.user)
+          this.$router.push('/Login')
+        })
     }
   }
 }
 </script>
-
-  <style>
-    .container-fluid{
-    justify-content: center;
-    text-align: center;
-    }
-    h1 {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    }
-    span {
-    display: block;
-    padding-bottom: 30px;
-    font-size: 1.6rem;
-    }
-  </style>
