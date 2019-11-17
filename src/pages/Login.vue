@@ -12,7 +12,7 @@ export default {
     }
   },
   created: function () {
-    fetch('https://api.myjson.com/bins/zu5ea')
+    fetch('https://api.myjson.com/bins/18xv8i')
       .then(response => response.json())
       .then(json => {
         this.users = json.users

@@ -1,49 +1,85 @@
 <template>
   <div>
-    <b-card-group>
+    <b-card-group deck>
       <b-card
-        title="ASICS Gel-Fujitrabuco shoes"
-        img-src="https://media2.deporvillage.com/h_124,w_124,f_auto,q_auto,c_pad,b_white/product/as-1011a197400_001.jpg"
+        title="New Balance"
+        img-src="https://www.dwsports.com/dw/image/v2/BBTQ_PRD/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw107206c0/products/images/302751801_01.jpg?sw=265"
+
         img-alt="Image"
         img-top
       >
         <b-card-text>
-          The ASICS Gel-Fujitrabuco 7 GORE-TEX shoes have been designed to provide the comfort and agility needed on the trail. These shoes protect the feet and keep them stable, waterproof and comfortable even on the toughest outdoor trails.
+          Liverpool Home Gk Childrens Kit.
         </b-card-text>
-        <template v-slot:footer>
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </template>
+        <template v-slot:footer />
       </b-card>
 
       <b-card
-        title="Salomon XA PRO"
-        img-src="https://media.deporvillage.com/h_114,f_auto,q_auto,c_pad,b_white/product/L40074500.jpg"
+        title="adidas"
+        img-src="https://www.dwsports.com/dw/image/v2/BBTQ_PRD/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw107206c0/products/images/302751801_01.jpg?sw=265"
         img-alt="Image"
         img-top
       >
         <b-card-text>
-          The Salomon XA PRO 3D shoes will allow you to attack any terrain with confidence thanks to the 3D Advanced chassis. With the reinforced tip and smart protection on the key points, your feet will be fully protected.
+          Juventus Away Shirt Ronaldo 7 Kids.
         </b-card-text>
-        <template v-slot:footer>
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </template>
+        <template v-slot:footer />
       </b-card>
 
       <b-card
-        title="Chiruca Montserrat GORE-TEX"
-        img-src="https://media.deporvillage.com/h_114,f_auto,q_auto,c_pad,b_white/product/montserrat_68.jpg"
+        title="Nike"
+        img-src="https://www.dwsports.com/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw426c6590/products/images/314007501_01.jpg"
         img-alt="Image"
         img-top
       >
         <b-card-text>
-          The Chiruca Montserrat GORE-TEX walking shoes feature materials and constructive systems that facilitate a very high technical performance. They are made of water-repellent tightened leather with a water-repellent Cordura collar.
+          PSG KIDS HOME SHIRT MBAPPE 7.
         </b-card-text>
-        <template v-slot:footer>
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </template>
+        <template v-slot:footer />
+      </b-card>
+    </b-card-group>
+
+    <b-card-group deck>
+      <b-card
+        title="Nike"
+        img-src="https://www.dwsports.com/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw79f06993/products/images/007026462_01.jpg"
+        img-alt="Image"
+        img-top
+      >
+        <b-card-text>
+          Mercurial Superfly Academy FG/MG Kids.
+        </b-card-text>
+        <template v-slot:footer />
+      </b-card>
+
+      <b-card
+        title="Nike"
+        img-src="https://www.dwsports.com/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw2b39f36f/products/images/043135962_01.jpg"
+
+        img-top
+      >
+        <b-card-text>
+          CR7 Dri-Fit Tracksuit.
+        </b-card-text>
+        <template v-slot:footer />
+      </b-card>
+
+      <b-card
+        title="“Puma”"
+        img-src="https://www.dwsports.com/on/demandware.static/-/Sites-DWS-Master-Catalog/default/dw2b665068/products/images/316003191_01.jpg"
+        img-alt="Image"
+        img-top
+      >
+        <b-card-text>
+          NEWCASTLE AWAY INFANT KIT.
+        </b-card-text>
+        <template v-slot:footer />
       </b-card>
     </b-card-group>
   </div>
 </template>
 
 <script>
+</script>
+
+<style>

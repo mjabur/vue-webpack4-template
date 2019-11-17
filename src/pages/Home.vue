@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <b-card
         overlay
-        img-src="https://motivationping.com/wp-content/uploads/2017/11/2.jpg"
+        img-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQefaa3JBxwbykwfb9TbV7JEin6PdHVrShyO_iOFQQaSwKhXELb&s"
         img-alt="Card Image"
         text-variant="black"
         title="WELCOME TO THE OFFICIAL WEBSITE OF JUST DO IT "
