@@ -70,6 +70,7 @@
         img-alt="Image"
         img-top
       >
+      
         <b-card-text>
           NEWCASTLE AWAY INFANT KIT.
         </b-card-text>

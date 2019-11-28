@@ -13,7 +13,7 @@
           img-top
         >
           <b-card-text>
-"JUST DO IT “ it’s a platform that sell sport products for all kind of sports Fitness,Running,Handball,Field hockey,Korfball,Volleyball,Squash Hiking and Floorba
+            "JUST DO IT “ it’s a platform that sell sport products for all kind of sports Fitness,Running,Handball,Field hockey,Korfball,Volleyball,Squash Hiking and Floorba
           </b-card-text>
           <template v-slot:footer />
         </b-card>
@@ -22,5 +22,5 @@
   </div>
 </template>
 
-<script> 
+<script>
 </script>

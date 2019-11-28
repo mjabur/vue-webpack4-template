@@ -9,7 +9,8 @@
         title="WELCOME TO THE OFFICIAL WEBSITE OF JUST DO IT "
       >
         <b-card-text>
-          THE WORLD'S Sport
+          `
+          The World of Sport
         </b-card-text>
       </b-card>
     </div>
