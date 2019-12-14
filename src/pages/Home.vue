@@ -14,7 +14,37 @@
         </b-card-text>
       </b-card>
     </div>
-
+    <b-container
+      fluid
+      class="p-4 bg-dark"
+    >
+      <b-row>
+        <b-col>
+          <b-img
+            thumbnail
+            fluid
+            src="https://sc01.alicdn.com/kf/HTB12aCyhAOWBuNjSsppq6xPgpXae/football-shirt-maker-wholesale-soccer-t-shirts.jpg_350x350.jpg"
+            alt="Image 1"
+          />
+        </b-col>
+        <b-col>
+          <b-img
+            thumbnail
+            fluid
+            src="http://www.pigskincanada.com/assets/images/volleyballkitspike.jpg"
+            alt="Image 2"
+          />
+        </b-col>
+        <b-col>
+          <b-img
+            thumbnail
+            fluid
+            src="https://image.made-in-china.com/202f0j00UAkEGdmyAHgu/Custom-College-Basketball-Uniforms-Cheap-Blank-Basketball-Jerseys-for-Printing.jpg"
+            alt="Image 3"
+          />
+        </b-col>
+      </b-row>
+    </b-container>
     <div class="full-width center-content">
       <b-form @submit="onSubmit">
         <b-form-group
