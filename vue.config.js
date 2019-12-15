@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  publicPath: '.'
+publicPath: ‘<vue-webpack4-template>’
 }
