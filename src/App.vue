@@ -68,13 +68,13 @@
                     to="/register"
                     router-tag="b-nav-item"
                   >
-                  Register
+                    Register
                   </b-link>
 
                   <b-link
                     to="/Login"
                     router-tag="b-nav-item"
-                    >
+                  >
                     Login
                   </b-link>
                 </b-navbar-nav>
