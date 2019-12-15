@@ -96,7 +96,7 @@ export default {
   },
   methods: {
     onSubmit () {
-      fetch('https://api.myjson.com/bins/18xv8i')
+      fetch('https://3000-e803d580-d89d-4ec9-8ab4-bfee0aad972c.ws-eu01.gitpod.io/api/users')
         .then(response => response.json())
         .then(json => {
           this.users = json.users

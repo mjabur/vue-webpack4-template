@@ -6,6 +6,7 @@ import Store from 'pages/Store'
 import Contact from 'pages/Contact'
 import Login from 'pages/Login'
 import Logout from 'pages/Logout'
+import Register from 'pages/Register'
 
 Vue.use(Router)
 
@@ -33,6 +34,10 @@ const routes = [
   {
     path: '/logout',
     component: Logout
+  },
+  {
+    path: '/register',
+    component: Register
   }
 ]
 
