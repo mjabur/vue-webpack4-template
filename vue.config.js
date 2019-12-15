@@ -1,4 +1,6 @@
 // vue.config.js
 module.exports = {
-publicPath: ‘<vue-webpack4-template>’
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/vue-webpack4-template/'
+    : '/'
 }
